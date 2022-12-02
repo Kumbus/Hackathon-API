@@ -1,42 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\WebApi\\WebApi.csproj": {}
+    "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\Application\\Application.csproj": {
+    "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Jakub Wrona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\Application\\obj\\",
+        "projectPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\wikar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jakub Wrona\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wikar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\Domain\\Domain.csproj"
+              "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Domain\\Domain.csproj"
               }
             }
           }
@@ -95,6 +92,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -104,31 +115,28 @@
         }
       }
     },
-    "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\Domain\\Domain.csproj": {
+    "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Jakub Wrona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\wikar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jakub Wrona\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wikar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -175,6 +183,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -184,39 +206,36 @@
         }
       }
     },
-    "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Jakub Wrona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\wikar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jakub Wrona\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wikar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\Application\\Application.csproj"
+              "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Application\\Application.csproj"
               }
             }
           }
@@ -275,6 +294,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -284,42 +317,39 @@
         }
       }
     },
-    "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\WebApi\\WebApi.csproj",
-        "packagesPath": "C:\\Users\\Jakub Wrona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\WebApi\\obj\\",
+        "projectPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\WebApi\\WebApi.csproj",
+        "packagesPath": "C:\\Users\\wikar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jakub Wrona\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wikar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\Application\\Application.csproj"
+              "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Application\\Application.csproj"
               },
-              "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Jakub Wrona\\Desktop\\Wszechświat\\Hackathon\\API\\TaskControllerAPI\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -356,18 +386,6 @@
               "target": "Package",
               "version": "[6.0.11, )"
             },
-            "Serilog.AspNetCore": {
-              "target": "Package",
-              "version": "[6.1.0, )"
-            },
-            "Serilog.Settings.Configuration": {
-              "target": "Package",
-              "version": "[3.4.0, )"
-            },
-            "Serilog.Sinks.File": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -388,6 +406,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

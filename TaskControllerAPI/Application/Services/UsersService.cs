@@ -1,4 +1,4 @@
-﻿using Application.Dtos;
+﻿using Application.Dtos.UserDtos;
 using Application.Exceptions;
 using Application.Interfaces;
 using AutoMapper;
