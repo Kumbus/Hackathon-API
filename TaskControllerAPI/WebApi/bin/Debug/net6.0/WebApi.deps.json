@@ -9,6 +9,7 @@
       "WebApi/1.0.0": {
         "dependencies": {
           "Application": "1.0.0",
+          "Google.Apis.Auth": "1.58.0",
           "Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.Authentication.Google": "6.0.11",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.11",
@@ -49,6 +50,44 @@
           "lib/net6.0/FluentValidation.dll": {
             "assemblyVersion": "11.0.0.0",
             "fileVersion": "11.4.0.0"
+          }
+        }
+      },
+      "Google.Apis/1.58.0": {
+        "dependencies": {
+          "Google.Apis.Core": "1.58.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.dll": {
+            "assemblyVersion": "1.58.0.0",
+            "fileVersion": "1.58.0.0"
+          }
+        }
+      },
+      "Google.Apis.Auth/1.58.0": {
+        "dependencies": {
+          "Google.Apis": "1.58.0",
+          "Google.Apis.Core": "1.58.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {
+            "assemblyVersion": "1.58.0.0",
+            "fileVersion": "1.58.0.0"
+          },
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {
+            "assemblyVersion": "1.58.0.0",
+            "fileVersion": "1.58.0.0"
+          }
+        }
+      },
+      "Google.Apis.Core/1.58.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {
+            "assemblyVersion": "1.58.0.0",
+            "fileVersion": "1.58.0.0"
           }
         }
       },
@@ -469,6 +508,14 @@
           }
         }
       },
+      "Newtonsoft.Json/13.0.2": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.2.27524"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.2.3": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "3.0.0",
@@ -676,6 +723,7 @@
           "AutoMapper": "12.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
           "Domain": "1.0.0",
+          "Google.Apis.Auth": "1.58.0",
           "Microsoft.AspNetCore.Authentication.Google": "6.0.11",
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.11",
@@ -689,6 +737,7 @@
       "Domain/1.0.0": {
         "dependencies": {
           "FluentValidation": "11.4.0",
+          "Google.Apis.Auth": "1.58.0",
           "Microsoft.AspNetCore.Authentication.Google": "6.0.11",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.11"
         },
@@ -699,6 +748,7 @@
       "Infrastructure/1.0.0": {
         "dependencies": {
           "Application": "1.0.0",
+          "Google.Apis.Auth": "1.58.0",
           "Microsoft.AspNetCore.Authentication.Google": "6.0.11",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.11",
           "Microsoft.EntityFrameworkCore": "6.0.11",
@@ -736,6 +786,27 @@
       "sha512": "sha512-WZJyrNf4suiaI6avVG32W9kmBLC3+V5rDTcLeRJjeU4tDmTyDIOz1459DzCKppXs34YpZg9rCUzDY3M4XxG7Ug==",
       "path": "fluentvalidation/11.4.0",
       "hashPath": "fluentvalidation.11.4.0.nupkg.sha512"
+    },
+    "Google.Apis/1.58.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OFIWLMbxL096T6L3b0cQLSQGAxRZWIZLNkjZtaYUQ5exz67aW7+Sd+OQnzdFGrV0yyTNlMOy+j6AqmdsenJHXA==",
+      "path": "google.apis/1.58.0",
+      "hashPath": "google.apis.1.58.0.nupkg.sha512"
+    },
+    "Google.Apis.Auth/1.58.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8HAVH23c/O6ODdpedkw/2B3VqG4YKEMk0v0Sb6tEz7GRaiqGwdMntytr7iez0iFvCFDA5SkHnYDCNCIztnSMhA==",
+      "path": "google.apis.auth/1.58.0",
+      "hashPath": "google.apis.auth.1.58.0.nupkg.sha512"
+    },
+    "Google.Apis.Core/1.58.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-e1QpJz6hMuxN7Whm9ORl98dV9/6kM4UC+zNHGFO/S7OVV4wglFkix9DMidzdEmo3AGrs9KZSk69N+rYHJKqn+A==",
+      "path": "google.apis.core/1.58.0",
+      "hashPath": "google.apis.core.1.58.0.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",
@@ -1051,6 +1122,13 @@
       "sha512": "sha512-mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
       "path": "microsoft.win32.systemevents/4.7.0",
       "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
+      "path": "newtonsoft.json/13.0.2",
+      "hashPath": "newtonsoft.json.13.0.2.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.2.3": {
       "type": "package",
