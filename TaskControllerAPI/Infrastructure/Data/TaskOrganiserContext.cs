@@ -1,4 +1,6 @@
 ﻿using Domain.Common;
+using Domain.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,12 +10,14 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Data
 {
-    public class TaskOrganiserContext : DbContext
+    public class TaskOrganiserContext : IdentityDbContext<User>
     {
         public TaskOrganiserContext(DbContextOptions<TaskOrganiserContext> options) : base(options)
         {
 
         }
+
+        public DbSet<User> Users { get; set; }
         public async Task<int> SaveChangesAsync()
         {
             var entries = ChangeTracker

@@ -1,4 +1,6 @@
-﻿using AutoMapper;
+﻿using Application.Dtos;
+using AutoMapper;
+using Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +14,7 @@ namespace Application.Mappings
         public static IMapper Initialize()
             => new MapperConfiguration(cfg =>
             {
+                cfg.CreateMap<UserRegistrationDto, User>().ConstructUsing(u => new User(u.FirstName, u.LastName, u.Username, u.Email));
             })
             .CreateMapper();
     }

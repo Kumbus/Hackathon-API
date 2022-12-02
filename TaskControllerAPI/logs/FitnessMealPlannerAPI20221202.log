@@ -25,3 +25,132 @@
 [2022-12-02 20:34:14.747 +01:00  INF]  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
 [2022-12-02 20:34:14.747 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7165/swagger/favicon-32x32.png - - - 200 628 image/png 0.4804ms
 [2022-12-02 20:34:14.812 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 71.1181ms
+[2022-12-02 22:21:48.034 +01:00  INF]  Entity Framework Core 6.0.11 initialized 'TaskOrganiserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+[2022-12-02 22:21:59.751 +01:00  INF]  Entity Framework Core 6.0.11 initialized 'TaskOrganiserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+[2022-12-02 22:25:42.897 +01:00  INF]  Entity Framework Core 6.0.11 initialized 'TaskOrganiserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+[2022-12-02 22:26:41.535 +01:00  INF]  Entity Framework Core 6.0.11 initialized 'TaskOrganiserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+[2022-12-02 22:27:00.008 +01:00  INF]  Entity Framework Core 6.0.11 initialized 'TaskOrganiserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+[2022-12-02 22:27:16.782 +01:00  INF]  Entity Framework Core 6.0.11 initialized 'TaskOrganiserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+[2022-12-02 22:28:58.527 +01:00  INF]  Entity Framework Core 6.0.11 initialized 'TaskOrganiserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+[2022-12-02 22:29:19.001 +01:00  INF]  Entity Framework Core 6.0.11 initialized 'TaskOrganiserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+[2022-12-02 22:30:34.028 +01:00  INF]  Entity Framework Core 6.0.11 initialized 'TaskOrganiserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+[2022-12-02 22:31:07.057 +01:00  INF]  Entity Framework Core 6.0.11 initialized 'TaskOrganiserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+[2022-12-02 22:31:36.671 +01:00  INF]  Entity Framework Core 6.0.11 initialized 'TaskOrganiserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+[2022-12-02 22:31:39.990 +01:00  INF]  Executed DbCommand (1,197ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [hackathon];
+[2022-12-02 22:31:40.485 +01:00  INF]  Executed DbCommand (491ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [hackathon] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+[2022-12-02 22:31:41.525 +01:00  INF]  Executed DbCommand (219ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[2022-12-02 22:31:41.817 +01:00  INF]  Executed DbCommand (174ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+[2022-12-02 22:31:42.022 +01:00  INF]  Executed DbCommand (203ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[2022-12-02 22:31:42.239 +01:00  INF]  Executed DbCommand (207ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[2022-12-02 22:31:42.540 +01:00  INF]  Executed DbCommand (296ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[2022-12-02 22:31:42.559 +01:00  INF]  Applying migration '20221202212148_initCreate'.
+[2022-12-02 22:31:43.048 +01:00  INF]  Executed DbCommand (197ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+[2022-12-02 22:31:43.254 +01:00  INF]  Executed DbCommand (205ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] nvarchar(450) NOT NULL,
+    [FirstName] nvarchar(max) NOT NULL,
+    [LastName] nvarchar(max) NOT NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+[2022-12-02 22:31:43.455 +01:00  INF]  Executed DbCommand (201ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+[2022-12-02 22:31:43.664 +01:00  INF]  Executed DbCommand (209ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+[2022-12-02 22:31:43.902 +01:00  INF]  Executed DbCommand (237ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+[2022-12-02 22:31:44.070 +01:00  INF]  Executed DbCommand (168ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] nvarchar(450) NOT NULL,
+    [RoleId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+[2022-12-02 22:31:44.379 +01:00  INF]  Executed DbCommand (308ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] nvarchar(450) NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+[2022-12-02 22:31:44.512 +01:00  INF]  Executed DbCommand (132ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetRoleClaims_RoleId] ON [AspNetRoleClaims] ([RoleId]);
+[2022-12-02 22:31:44.683 +01:00  INF]  Executed DbCommand (171ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [RoleNameIndex] ON [AspNetRoles] ([NormalizedName]) WHERE [NormalizedName] IS NOT NULL;
+[2022-12-02 22:31:44.890 +01:00  INF]  Executed DbCommand (206ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserClaims_UserId] ON [AspNetUserClaims] ([UserId]);
+[2022-12-02 22:31:45.093 +01:00  INF]  Executed DbCommand (203ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserLogins_UserId] ON [AspNetUserLogins] ([UserId]);
+[2022-12-02 22:31:45.300 +01:00  INF]  Executed DbCommand (206ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserRoles_RoleId] ON [AspNetUserRoles] ([RoleId]);
+[2022-12-02 22:31:45.502 +01:00  INF]  Executed DbCommand (202ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [EmailIndex] ON [AspNetUsers] ([NormalizedEmail]);
+[2022-12-02 22:31:45.709 +01:00  INF]  Executed DbCommand (206ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [UserNameIndex] ON [AspNetUsers] ([NormalizedUserName]) WHERE [NormalizedUserName] IS NOT NULL;
+[2022-12-02 22:31:45.913 +01:00  INF]  Executed DbCommand (204ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20221202212148_initCreate', N'6.0.11');
+[2022-12-02 22:31:46.121 +01:00  INF]  Applying migration '20221202212700_initCreate2'.
+[2022-12-02 22:31:46.530 +01:00  INF]  Executed DbCommand (207ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20221202212700_initCreate2', N'6.0.11');

@@ -1,4 +1,7 @@
-﻿using Infrastructure.Data;
+﻿using Domain.Entities;
+using Infrastructure.Data;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace WebApi.Installers
@@ -9,6 +12,11 @@ namespace WebApi.Installers
         {
             builder.Services.AddDbContext<TaskOrganiserContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("TaskOrganiserCS")));
+
+            builder.Services.AddIdentity<User, IdentityRole>( options =>
+            {
+
+            }).AddEntityFrameworkStores<TaskOrganiserContext>().AddDefaultTokenProviders();
         }
     }
 }
