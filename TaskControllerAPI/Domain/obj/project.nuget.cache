@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "WajqwmC/PFLU6BJfvG7gRGpGcwPxE0ewZY+tlX9jqhlvt8WSiaerZZl21T1hP57WqHspfp/X/ZO0uAovFI4wCw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon\\API\\TaskControllerAPI\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wikar\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
+    "C:\\Users\\wikar\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.11\\microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\wikar\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.11\\microsoft.windowsdesktop.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\wikar\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.11\\microsoft.netcore.app.ref.6.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,27 @@
+[2022-12-02 20:34:09.928 +01:00  INF]  Now listening on: https://localhost:7165
+[2022-12-02 20:34:09.995 +01:00  INF]  Now listening on: http://localhost:5165
+[2022-12-02 20:34:10.000 +01:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-12-02 20:34:10.000 +01:00  INF]  Hosting environment: Development
+[2022-12-02 20:34:10.000 +01:00  INF]  Content root path: C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\
+[2022-12-02 20:34:11.965 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7165/swagger - -
+[2022-12-02 20:34:12.817 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7165/swagger - - - 301 0 - 785.7883ms
+[2022-12-02 20:34:13.158 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7165/swagger/index.html - -
+[2022-12-02 20:34:13.816 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7165/swagger/index.html - - - 200 - text/html;charset=utf-8 658.1765ms
+[2022-12-02 20:34:13.988 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7165/swagger/swagger-ui.css - -
+[2022-12-02 20:34:14.149 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7165/swagger/swagger-ui-bundle.js - -
+[2022-12-02 20:34:14.175 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7165/_framework/aspnetcore-browser-refresh.js - -
+[2022-12-02 20:34:14.178 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7165/_vs/browserLink - -
+[2022-12-02 20:34:14.219 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7165/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 43.7227ms
+[2022-12-02 20:34:14.219 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7165/swagger/swagger-ui-standalone-preset.js - -
+[2022-12-02 20:34:14.232 +01:00  INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+[2022-12-02 20:34:14.232 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7165/swagger/swagger-ui.css - - - 200 143632 text/css 244.6987ms
+[2022-12-02 20:34:14.352 +01:00  INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+[2022-12-02 20:34:14.352 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7165/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 132.8582ms
+[2022-12-02 20:34:14.390 +01:00  INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+[2022-12-02 20:34:14.391 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7165/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 242.3456ms
+[2022-12-02 20:34:14.420 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7165/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 243.6684ms
+[2022-12-02 20:34:14.741 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - -
+[2022-12-02 20:34:14.746 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7165/swagger/favicon-32x32.png - -
+[2022-12-02 20:34:14.747 +01:00  INF]  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+[2022-12-02 20:34:14.747 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7165/swagger/favicon-32x32.png - - - 200 628 image/png 0.4804ms
+[2022-12-02 20:34:14.812 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7165/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 71.1181ms
