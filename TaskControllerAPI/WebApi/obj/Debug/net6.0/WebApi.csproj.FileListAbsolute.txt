@@ -184,3 +184,4 @@ C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi
 C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\obj\Debug\net6.0\WebApi.pdb
 C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\obj\Debug\net6.0\WebApi.genruntimeconfig.cache
 C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\obj\Debug\net6.0\ref\WebApi.dll
+C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Google.dll

@@ -1,4 +1,5 @@
 ﻿using Application.Dtos;
+using Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -11,5 +12,6 @@ namespace Application.Interfaces
     public interface IUsersService
     {
         public Task<IdentityResult> AddUser(UserRegistrationDto registrationDto);
+        public Task<User> GetUser(UserLoginDto loginDto);
     }
 }

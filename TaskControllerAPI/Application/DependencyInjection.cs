@@ -1,4 +1,6 @@
-﻿using Application.Mappings;
+﻿using Application.Interfaces;
+using Application.Mappings;
+using Application.Services;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -13,6 +15,7 @@ namespace Application
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
             services.AddSingleton(AutoMapperConfig.Initialize());
+            services.AddScoped<IUsersService, UsersService>();
             return services;
         }
     }

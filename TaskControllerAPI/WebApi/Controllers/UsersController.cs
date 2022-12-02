@@ -34,11 +34,18 @@ namespace WebApi.Controllers
             return Ok(new RegistrationResponseDto { IsSuccessfulRegistration = true }); ;
         }
 
-        //[HttpPost]
-        //[Route("login")]
-        //public async Task<IActionResult> UserLogin(UserLoginDto loginDto)
-        //{
+        [HttpPost]
+        [Route("googleRegister")]
+        public async Task<IActionResult> UserGoogleRegister()
+        {
+            return Ok();
+        }
 
-        //}
+        [HttpPost]
+        [Route("login")]
+        public async Task<IActionResult> UserLogin(UserLoginDto loginDto)
+        {
+
+        }
     }
 }
