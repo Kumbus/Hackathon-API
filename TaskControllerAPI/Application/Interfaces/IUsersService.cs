@@ -1,4 +1,4 @@
-﻿using Application.Dtos;
+﻿using Application.Dtos.UserDtos;
 using Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using System;
