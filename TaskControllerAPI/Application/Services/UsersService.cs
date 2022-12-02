@@ -16,6 +16,13 @@ namespace Application.Services
     {
         private readonly IMapper _mapper;
         private readonly UserManager<User> _userManager;
+
+        public UsersService(IMapper mapper, UserManager<User> userManager)
+        {
+            _mapper = mapper;
+            _userManager = userManager;
+        }
+
         public async Task<IdentityResult> AddUser(UserRegistrationDto registrationDto)
         {
             if (registrationDto == null)
@@ -26,6 +33,17 @@ namespace Application.Services
             var result = await _userManager.CreateAsync(user, registrationDto.Password);
 
             return result;
+        }
+
+        public async Task<User> GetUser(UserLoginDto loginDto)
+        {
+            var user = await _userManager.FindByNameAsync(loginDto.UserName);
+            if(user is null || !await _userManager.CheckPasswordAsync(user, loginDto.Password))
+                throw new InvalidCredentialsException();
+
+            return user;
+
+
         }
     }
 }
