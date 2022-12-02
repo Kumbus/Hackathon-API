@@ -1,4 +1,4 @@
-﻿using Application.Dtos;
+﻿using Application.Dtos.UserDtos;
 using Application.Interfaces;
 using AutoMapper;
 using Domain.Entities;
@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("users")]
     [ApiController]
     public class UsersController : ControllerBase
     {

@@ -154,3 +154,41 @@ VALUES (N'20221202212148_initCreate', N'6.0.11');
 [2022-12-02 22:31:46.530 +01:00  INF]  Executed DbCommand (207ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
 INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
 VALUES (N'20221202212700_initCreate2', N'6.0.11');
+[2022-12-02 22:43:33.716 +01:00  WRN]  The foreign key property 'ActivitySlot.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+[2022-12-02 22:43:33.915 +01:00  INF]  Entity Framework Core 6.0.11 initialized 'TaskOrganiserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+[2022-12-02 22:43:39.990 +01:00  WRN]  The foreign key property 'ActivitySlot.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+[2022-12-02 22:43:40.175 +01:00  INF]  Entity Framework Core 6.0.11 initialized 'TaskOrganiserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+[2022-12-02 22:43:40.199 +01:00  WRN]  The foreign key property 'ActivitySlot.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+[2022-12-02 22:47:46.763 +01:00  INF]  Entity Framework Core 6.0.11 initialized 'TaskOrganiserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+[2022-12-02 22:49:40.712 +01:00  INF]  Entity Framework Core 6.0.11 initialized 'TaskOrganiserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+[2022-12-02 22:50:04.764 +01:00  INF]  Entity Framework Core 6.0.11 initialized 'TaskOrganiserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.11' with options: None
+[2022-12-02 22:50:06.735 +01:00  INF]  Executed DbCommand (221ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[2022-12-02 22:50:06.974 +01:00  INF]  Executed DbCommand (226ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[2022-12-02 22:50:07.099 +01:00  INF]  Executed DbCommand (123ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[2022-12-02 22:50:07.279 +01:00  INF]  Executed DbCommand (179ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[2022-12-02 22:50:07.425 +01:00  INF]  Executed DbCommand (134ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[2022-12-02 22:50:07.447 +01:00  INF]  Applying migration '20221202214940_addedActivitySlots'.
+[2022-12-02 22:50:07.943 +01:00  INF]  Executed DbCommand (256ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Activity Slots] (
+    [Id] uniqueidentifier NOT NULL,
+    [CategoryOfActivity] nvarchar(max) NOT NULL,
+    [Start] datetime2 NOT NULL,
+    [End] datetime2 NOT NULL,
+    [UserId] nvarchar(450) NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [LastModified] datetime2 NULL,
+    CONSTRAINT [PK_Activity Slots] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Activity Slots_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id])
+);
+[2022-12-02 22:50:08.076 +01:00  INF]  Executed DbCommand (132ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Activity Slots_UserId] ON [Activity Slots] ([UserId]);
+[2022-12-02 22:50:08.256 +01:00  INF]  Executed DbCommand (180ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20221202214940_addedActivitySlots', N'6.0.11');

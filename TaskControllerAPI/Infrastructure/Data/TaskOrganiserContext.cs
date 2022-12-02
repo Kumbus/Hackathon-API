@@ -12,12 +12,14 @@ namespace Infrastructure.Data
 {
     public class TaskOrganiserContext : IdentityDbContext<User>
     {
+        public DbSet<User> Users { get; set; }
+        public DbSet<ActivitySlot> ActivitySlots { get; set; }
+
         public TaskOrganiserContext(DbContextOptions<TaskOrganiserContext> options) : base(options)
         {
 
         }
 
-        public DbSet<User> Users { get; set; }
         public async Task<int> SaveChangesAsync()
         {
             var entries = ChangeTracker
@@ -34,6 +36,20 @@ namespace Infrastructure.Data
                 }
             }
             return await base.SaveChangesAsync();
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<User>()
+                .ToTable("Users");
+
+            modelBuilder.Entity<ActivitySlot>()
+                .ToTable("Activity Slots")
+                .Property(s => s.CategoryOfActivity)
+                .HasConversion<string>();               
+
+            base.OnModelCreating(modelBuilder);
+
         }
     }
 }
