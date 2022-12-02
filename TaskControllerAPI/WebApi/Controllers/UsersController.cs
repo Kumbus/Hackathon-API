@@ -41,11 +41,11 @@ namespace WebApi.Controllers
             return Ok();
         }
 
-        [HttpPost]
-        [Route("login")]
-        public async Task<IActionResult> UserLogin(UserLoginDto loginDto)
-        {
+        //[HttpPost]
+        //[Route("login")]
+        //public async Task<IActionResult> UserLogin(UserLoginDto loginDto)
+        //{
 
-        }
+        //}
     }
 }

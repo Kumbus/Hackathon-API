@@ -114,7 +114,6 @@ C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi
 C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.Identity.Client.dll
@@ -126,15 +125,6 @@ C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi
 C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Serilog.dll
-C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Serilog.AspNetCore.dll
-C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
-C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
-C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
-C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
-C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Serilog.Sinks.Console.dll
-C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
-C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Serilog.Sinks.File.dll
 C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -185,3 +175,8 @@ C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi
 C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\obj\Debug\net6.0\WebApi.genruntimeconfig.cache
 C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\obj\Debug\net6.0\ref\WebApi.dll
 C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Google.Apis.dll
+C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Google.Apis.Auth.PlatformServices.dll
+C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Google.Apis.Auth.dll
+C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Google.Apis.Core.dll
+C:\Users\Jakub Wrona\Desktop\Wszechświat\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Newtonsoft.Json.dll
