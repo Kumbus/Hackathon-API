@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1RIcAtTB/O0USB65cHMhGVxdYU6SpXjqk1mlHb9wjmxlcUV6uKKr+WCUMbfI6AAN9x/r+IqMjo9EEnRuE0VfWw==",
+  "dgSpecHash": "zIuJyWVTKMnJctMHuHyQ7az3sJWJ1VVlrCT9wjxVHONkFMCe10FxDOqAw68Hvg7UczcHbn0Je11B8R5mA1W75g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\hack3\\API\\TaskControllerAPI\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wikar\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
     "C:\\Users\\wikar\\.nuget\\packages\\google.apis\\1.58.0\\google.apis.1.58.0.nupkg.sha512",
