@@ -30,10 +30,10 @@ namespace Domain.Entities
         public User User { get; set; }
         public IEnumerable<PlannedTask> Activities {get; set;}
 
-        public ActivitySlot(Category categoryOfActivity, DateTime start, DateTime end, string name, string userId)
+        public ActivitySlot(Category categoryOfActivity, string name, DateTime start, DateTime end,  string userId, string color)
         {
             Id = Guid.NewGuid();
-            (CategoryOfActivity, Start, End, Name, UserId) = (categoryOfActivity, start, end, name, userId);
+            (CategoryOfActivity, Start, End, Name, UserId, Color) = (categoryOfActivity, start, end, name, userId, color);
         }
     }
 }

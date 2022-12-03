@@ -24,14 +24,14 @@ namespace WebApi.Controllers
             return Ok(task);
         }
 
-        [HttpGet("tasks/user/{id}")]
+        [HttpGet("tasks/user/{userId}")]
         public async Task<IActionResult> GetTasksByUserId(string userId)
         {
             var tasks = await _service.GetTasksByUserIdAsync(userId);
             return Ok(tasks);
         }
 
-        [HttpGet("tasks/slot/{id}")]
+        [HttpGet("tasks/slot/{slotId}")]
         public async Task<IActionResult> GetTasksBySlotId(Guid slotId)
         {
             var tasks = await _service.GetTasksBySlotIdAsync(slotId);

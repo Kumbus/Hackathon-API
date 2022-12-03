@@ -32,7 +32,7 @@ namespace WebApi.Controllers
             return Ok(slot);
         }
 
-        [HttpGet]
+        [HttpGet("/slots/allSlots/{userId}")]
         public async Task<IActionResult> GetSlots(string userId)
         {
             var slots = await _slotsService.GetSlotsAsync(userId);

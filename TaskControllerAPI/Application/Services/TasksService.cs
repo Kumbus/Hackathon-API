@@ -60,18 +60,18 @@ namespace Application.Services
             return _mapper.Map<TaskDto>(task);
         }
 
-        public async Task<TaskDto> GetTasksBySlotIdAsync(Guid slotId)
+        public async Task<IEnumerable<TaskDto>> GetTasksBySlotIdAsync(Guid slotId)
         {
             var tasks = await _repository.GetTasksBySlotIdAsync(slotId);
 
-            return _mapper.Map<TaskDto>(tasks);
+            return _mapper.Map<IEnumerable<TaskDto>>(tasks);
         }
 
-        public async Task<TaskDto> GetTasksByUserIdAsync(string userId)
+        public async Task<IEnumerable<TaskDto>> GetTasksByUserIdAsync(string userId)
         {
             var tasks = await _repository.GetTasksByUserIdAsync(userId);
 
-            return _mapper.Map<TaskDto>(tasks);
+            return _mapper.Map<IEnumerable<TaskDto>>(tasks);
         }
 
         public async Task<TaskDto> UpdateTaskAsync(UpdateTaskDto updatedTask, Guid id)

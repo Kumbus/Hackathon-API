@@ -13,8 +13,8 @@ namespace Application.Interfaces
         public Task<TaskDto> UpdateTaskAsync(UpdateTaskDto updatedTask, Guid id);
         public Task DeleteTaskAsync(Guid id);
         public Task<TaskDto> GetTaskByIdAsync(Guid id);
-        public Task<TaskDto> GetTasksBySlotIdAsync(Guid slotId);
-        public Task<TaskDto> GetTasksByUserIdAsync(string userId);
+        public Task<IEnumerable<TaskDto>> GetTasksBySlotIdAsync(Guid slotId);
+        public Task<IEnumerable<TaskDto>> GetTasksByUserIdAsync(string userId);
 
     }
 }

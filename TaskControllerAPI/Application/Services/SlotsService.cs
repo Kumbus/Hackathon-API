@@ -68,7 +68,7 @@ namespace Application.Services
 
             await _slotsRepository.UpdateSlotAsync(newSlot);
 
-            return _mapper.Map<SlotDto>(_mapper);
+            return _mapper.Map<SlotDto>(newSlot);
         }
     }
 }
