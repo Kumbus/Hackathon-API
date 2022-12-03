@@ -99,21 +99,24 @@ namespace Application.Services
         public async Task<LoginResponseDto> GetUser(UserLoginDto loginDto)
         {
             var user = await _userManager.FindByNameAsync(loginDto.UserName);
-            if(user is null || !await _userManager.CheckPasswordAsync(user, loginDto.Password))
+            if (user is null || !await _userManager.CheckPasswordAsync(user, loginDto.Password))
             {
                 await _userManager.AccessFailedAsync(user);
+                if (await _userManager.IsLockedOutAsync(user))
+                {
+                    throw new AccountLockedOutException();
+                }
                 throw new InvalidCredentialsException();
             }
-                
+
 
             if (!await _userManager.IsEmailConfirmedAsync(user))
                 throw new InvalidCredentialsException();
 
+            await _userManager.ResetAccessFailedCountAsync(user);
             var response = _mapper.Map<LoginResponseDto>(user);
 
             return response;
-
-
         }
 
         public async Task<IdentityResult> ResetPassword(ResetPasswordDto resetPasswordDto)
