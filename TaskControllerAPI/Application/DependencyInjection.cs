@@ -18,7 +18,6 @@ namespace Application
             services.AddScoped<IUsersService, UsersService>();
             services.AddScoped<ISlotsService, SlotsService>();
             services.AddScoped<IPlannedTasksService, TasksService>();
-            services.AddScoped<ITokenService, TokenService>();
             return services;
         }
     }

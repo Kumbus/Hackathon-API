@@ -455,9 +455,3 @@ C:\Users\wikar\OneDrive\Pulpit\Hackathon2\API\TaskControllerAPI\WebApi\obj\Debug
 C:\Users\wikar\OneDrive\Pulpit\Hackathon2\API\TaskControllerAPI\WebApi\obj\Debug\net6.0\WebApi.csproj.CopyComplete
 C:\Users\wikar\OneDrive\Pulpit\Hackathon2\API\TaskControllerAPI\WebApi\obj\Debug\net6.0\WebApi.genruntimeconfig.cache
 C:\Users\wikar\OneDrive\Pulpit\Hackathon2\API\TaskControllerAPI\WebApi\obj\Debug\net6.0\ref\WebApi.dll
-C:\Users\Jakub Wrona\Desktop\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\MailKit.dll
-C:\Users\Jakub Wrona\Desktop\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\MimeKit.dll
-C:\Users\Jakub Wrona\Desktop\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\NETCore.MailKit.dll
-C:\Users\Jakub Wrona\Desktop\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\BouncyCastle.Crypto.dll
-C:\Users\Jakub Wrona\Desktop\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\EmailService.dll
-C:\Users\Jakub Wrona\Desktop\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\EmailService.pdb

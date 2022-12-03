@@ -37,9 +37,6 @@
             "projectReferences": {
               "C:\\Users\\Jakub Wrona\\Desktop\\API\\TaskControllerAPI\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\Jakub Wrona\\Desktop\\API\\TaskControllerAPI\\Domain\\Domain.csproj"
-              },
-              "C:\\Users\\Jakub Wrona\\Desktop\\API\\TaskControllerAPI\\EmailService\\EmailService.csproj": {
-                "projectPath": "C:\\Users\\Jakub Wrona\\Desktop\\API\\TaskControllerAPI\\EmailService\\EmailService.csproj"
               }
             }
           }
@@ -165,74 +162,6 @@
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.11, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Jakub Wrona\\Desktop\\API\\TaskControllerAPI\\EmailService\\EmailService.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Jakub Wrona\\Desktop\\API\\TaskControllerAPI\\EmailService\\EmailService.csproj",
-        "projectName": "EmailService",
-        "projectPath": "C:\\Users\\Jakub Wrona\\Desktop\\API\\TaskControllerAPI\\EmailService\\EmailService.csproj",
-        "packagesPath": "C:\\Users\\Jakub Wrona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jakub Wrona\\Desktop\\API\\TaskControllerAPI\\EmailService\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Jakub Wrona\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "NETCore.MailKit": {
-              "target": "Package",
-              "version": "[2.1.0, )"
             }
           },
           "imports": [
@@ -388,9 +317,6 @@
             "projectReferences": {
               "C:\\Users\\Jakub Wrona\\Desktop\\API\\TaskControllerAPI\\Application\\Application.csproj": {
                 "projectPath": "C:\\Users\\Jakub Wrona\\Desktop\\API\\TaskControllerAPI\\Application\\Application.csproj"
-              },
-              "C:\\Users\\Jakub Wrona\\Desktop\\API\\TaskControllerAPI\\EmailService\\EmailService.csproj": {
-                "projectPath": "C:\\Users\\Jakub Wrona\\Desktop\\API\\TaskControllerAPI\\EmailService\\EmailService.csproj"
               },
               "C:\\Users\\Jakub Wrona\\Desktop\\API\\TaskControllerAPI\\Infrastructure\\Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\Jakub Wrona\\Desktop\\API\\TaskControllerAPI\\Infrastructure\\Infrastructure.csproj"

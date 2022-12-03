@@ -19,9 +19,5 @@ namespace Application.Dtos.UserDtos
         [DataType(DataType.Password)]
         [Compare("Password")]
         public string ComparePassword { get; set; }
-        //[Required]
-        //[DataType(DataType.EmailAddress)]
-        //public string Email { get; set; }
-        //public string ClientURI { get; set; }
     }
 }

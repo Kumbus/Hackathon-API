@@ -14,13 +14,9 @@ namespace WebApi.Controllers
     public class UsersController : ControllerBase
     {
         private readonly IUsersService _usersService;
-        private readonly ITokenService _tokenService;
-        private readonly IConfiguration _configuration;
-        public UsersController(IUsersService usersService, ITokenService tokenService, IConfiguration configuration) 
+        public UsersController(IUsersService usersService) 
         {       
             _usersService = usersService;
-            _tokenService = tokenService;
-            _configuration = configuration;
         }
 
         [HttpPost]
@@ -38,20 +34,6 @@ namespace WebApi.Controllers
 
             return Ok(new RegistrationResponseDto { IsSuccessfulRegistration = true }); ;
         }
-
-        //[HttpPost("EmailConfirmation")]
-        //public async Task<IActionResult> EmailConfirmation([FromQuery] string email, [FromQuery] string token)
-        //{           
-        //    var result = await _usersService.ConfirmEmail(email, token);
-        //    if (!result.Succeeded)
-        //    {
-        //        var errors = result.Errors.Select(e => e.Description);
-
-        //        return BadRequest(new { Errors = errors });
-        //    }
-
-        //    return Ok("Email confirmed");
-        //}
 
         [HttpPost]
         [Route("forgotPassword")]
@@ -86,23 +68,11 @@ namespace WebApi.Controllers
             return BadRequest();
         }
 
-
-        [HttpPost]
-        [Route("googleRegister")]
-        public async Task<IActionResult> GoogleRegister(ExternalAuthDto externalAuthDto)
-        {
-            var token = await _usersService.GoogleAuthentication(externalAuthDto);
-
-            return Ok(new { Token = token });
-        }
-
         [HttpPost]
         [Route("login")]
         public async Task<IActionResult> UserLogin([FromBody] UserLoginDto loginDto)
         {
             var hex = await _usersService.GetUser(loginDto);
-
-            //var token = _tokenService.GenerateJWT(user, _configuration);
 
             return Ok(hex);
         }

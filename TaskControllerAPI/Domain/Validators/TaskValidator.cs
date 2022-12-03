@@ -13,7 +13,7 @@ namespace Domain.Validators
     {
         public TaskValidator()
         {
-            RuleFor(a => a.Priority).LessThan(5).GreaterThanOrEqualTo(1);
+            RuleFor(a => a.Priority).LessThan(6).GreaterThanOrEqualTo(1);
             RuleFor(a => a.EstimatedMinutes).GreaterThanOrEqualTo(15).LessThan(1440);
         }
     }

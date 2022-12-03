@@ -23,12 +23,6 @@ namespace WebApi.Installers
                 options.User.RequireUniqueEmail = false;
                 options.Lockout.AllowedForNewUsers = true;
             }).AddEntityFrameworkStores<TaskOrganiserContext>().AddDefaultTokenProviders();
-            /*
-            builder.Services.AddAuthentication().AddGoogle(googleOptions =>
-            {
-                googleOptions.ClientId = builder.Configuration["ClientId"];
-                googleOptions.ClientSecret = builder.Configuration["ClientSecret"];
-            }); */
         }
     }
 }
