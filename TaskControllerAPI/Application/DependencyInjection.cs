@@ -17,6 +17,7 @@ namespace Application
             services.AddSingleton(AutoMapperConfig.Initialize());
             services.AddScoped<IUsersService, UsersService>();
             services.AddScoped<ISlotsService, SlotsService>();
+            services.AddScoped<ITokenService, TokenService>();
             return services;
         }
     }
