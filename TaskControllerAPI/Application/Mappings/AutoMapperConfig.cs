@@ -18,9 +18,9 @@ namespace Application.Mappings
             {
                 cfg.CreateMap<UserRegistrationDto, User>().ConstructUsing(u => new User(u.Username));
                 cfg.CreateMap<User, LoginResponseDto>();
-                cfg.CreateMap<PostSlotDto, ActivitySlot>().ConstructUsing(s => new ActivitySlot(s.CategoryOfActivity, s.Name, s.Start, s.End, s.Color));
+                cfg.CreateMap<PostSlotDto, ActivitySlot>().ConstructUsing(s => new ActivitySlot(s.CategoryOfActivity, s.Name, s.Start, s.QuartersNumber, s.Color));
                 cfg.CreateMap<ActivitySlot, SlotDto>();
-                cfg.CreateMap<UpdateSlotDto, ActivitySlot>().ConstructUsing(s => new ActivitySlot(s.CategoryOfActivity, s.Name, s.Start, s.End, s.Color));
+                cfg.CreateMap<UpdateSlotDto, ActivitySlot>().ConstructUsing(s => new ActivitySlot(s.CategoryOfActivity, s.Name, s.Start, s.QuartersNumber, s.Color));
                 cfg.CreateMap<PostTaskDto, PlannedTask>().ConstructUsing(t => new PlannedTask(t.EstimatedMinutes, t.IsCompleted, t.Priority, t.SlotId, t.TaskName));
                 cfg.CreateMap<PlannedTask, TaskDto>();
                 cfg.CreateMap<UpdateTaskDto, PlannedTask>();

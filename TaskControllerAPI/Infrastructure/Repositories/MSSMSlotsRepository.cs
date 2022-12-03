@@ -55,28 +55,29 @@ namespace Infrastructure.Repositories
         public async Task<List<List<ActivitySlot>>> GetWeek(DateTime dateTime, string userId) 
         {
             //var date = new TimeSpan(24,0,0);
+            
             var startDate = dateTime;
             var endDate = dateTime.AddDays(1);
             //var datetmp = new TimeSpan(24,0,0);
-            var monday = _context.ActivitySlots.Where(s => s.End >= startDate && s.End <= endDate && s.UserId == userId).ToList();
+            var monday = _context.ActivitySlots.Where(s => s.Start.AddMinutes(s.QuartersNumber*15) >= startDate && s.Start.AddMinutes(s.QuartersNumber * 15) <= endDate && s.UserId == userId).ToList();
             startDate = startDate.AddDays(1);
             endDate = endDate.AddDays(1);
-            var tuesday = _context.ActivitySlots.Where(s => s.End >= startDate && s.End <= endDate && s.UserId == userId).ToList();
+            var tuesday = _context.ActivitySlots.Where(s => s.Start.AddMinutes(s.QuartersNumber * 15) >= startDate && s.Start.AddMinutes(s.QuartersNumber * 15) <= endDate && s.UserId == userId).ToList();
             startDate = startDate.AddDays(1);
             endDate = endDate.AddDays(1);
-            var wednesday = _context.ActivitySlots.Where(s => s.End >= startDate && s.End <= endDate && s.UserId == userId).ToList();
+            var wednesday = _context.ActivitySlots.Where(s => s.Start.AddMinutes(s.QuartersNumber * 15) >= startDate && s.Start.AddMinutes(s.QuartersNumber * 15) <= endDate && s.UserId == userId).ToList();
             startDate = startDate.AddDays(1);
             endDate = endDate.AddDays(1);
-            var thursday = _context.ActivitySlots.Where(s => s.End >= startDate && s.End <= endDate && s.UserId == userId).ToList();
+            var thursday = _context.ActivitySlots.Where(s => s.Start.AddMinutes(s.QuartersNumber * 15) >= startDate && s.Start.AddMinutes(s.QuartersNumber * 15) <= endDate && s.UserId == userId).ToList();
             startDate = startDate.AddDays(1);
             endDate = endDate.AddDays(1);
-            var friday = _context.ActivitySlots.Where(s => s.End >= startDate && s.End <= endDate && s.UserId == userId).ToList();
+            var friday = _context.ActivitySlots.Where(s => s.Start.AddMinutes(s.QuartersNumber * 15) >= startDate && s.Start.AddMinutes(s.QuartersNumber * 15) <= endDate && s.UserId == userId).ToList();
             startDate = startDate.AddDays(1);
             endDate = endDate.AddDays(1);
-            var saturday = _context.ActivitySlots.Where(s => s.End >= startDate && s.End <= endDate && s.UserId == userId).ToList();
+            var saturday = _context.ActivitySlots.Where(s => s.Start.AddMinutes(s.QuartersNumber * 15) >= startDate && s.Start.AddMinutes(s.QuartersNumber * 15) <= endDate && s.UserId == userId).ToList();
             startDate = startDate.AddDays(1);
             endDate = endDate.AddDays(1);
-            var sunday = _context.ActivitySlots.Where(s => s.End >= startDate && s.End <= endDate && s.UserId == userId).ToList();
+            var sunday = _context.ActivitySlots.Where(s => s.Start.AddMinutes(s.QuartersNumber * 15) >= startDate && s.Start.AddMinutes(s.QuartersNumber * 15) <= endDate && s.UserId == userId).ToList();
 
 
             List<List<ActivitySlot>> activitySlots = new List<List<ActivitySlot>>

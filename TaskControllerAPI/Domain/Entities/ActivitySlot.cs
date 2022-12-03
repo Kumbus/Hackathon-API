@@ -23,17 +23,18 @@ namespace Domain.Entities
         public Category CategoryOfActivity { get; set; }
         public string Name { get; set; }
         public DateTime Start { get; set; }
-        public DateTime End { get; set; }
+        //public DateTime End { get; set; }
+        public int QuartersNumber { get; set; }
         public string UserId { get; set; }
         public string Color { get; set; }
 
         public User User { get; set; }
         public IEnumerable<PlannedTask> Activities {get; set;}
 
-        public ActivitySlot(Category categoryOfActivity, string name, DateTime start, DateTime end, string color)
+        public ActivitySlot(Category categoryOfActivity, string name, DateTime start, int quartersNumber, string color)
         {
             Id = Guid.NewGuid();
-            (CategoryOfActivity, Start, End, Name, Color) = (categoryOfActivity, start, end, name, color);
+            (CategoryOfActivity, Start, QuartersNumber, Name, Color) = (categoryOfActivity, start, quartersNumber, name, color);
         }
     }
 }

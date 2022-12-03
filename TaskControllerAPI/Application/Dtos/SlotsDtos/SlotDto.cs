@@ -12,7 +12,7 @@ namespace Application.Dtos.SlotsDtos
         public Guid Id { get; set; }
         public Category CategoryOfActivity { get; set; }
         public DateTime Start { get; set; }
-        public DateTime End { get; set; }
+        public int QuartersNumber { get; set; }
         public string UserId { get; set; }
         public string Color { get; set; }
     }

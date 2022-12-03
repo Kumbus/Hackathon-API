@@ -12,7 +12,7 @@ namespace Application.AdditionalStructures
         public Guid Id { get; set; }
         public Category CategoryOfActivity { get; set; }
         public DateTime Start { get; set; }
-        public DateTime End { get; set; }
+        public int QuartersNumber { get; set; }
         public string UserId { get; set; }
         public string Color { get; set; }
 
@@ -22,7 +22,7 @@ namespace Application.AdditionalStructures
             Id = slot.Id;  
             CategoryOfActivity= slot.CategoryOfActivity;
             Start= slot.Start;
-            End= slot.End;
+            QuartersNumber = slot.QuartersNumber;
             UserId = slot.UserId;
             Color = slot.Color;
             TasksIds = new List<Guid>();

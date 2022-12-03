@@ -118,7 +118,7 @@ namespace Application.Services
                     var tasks = await _plannedTasksRepository.GetTasksIdsBySlotId(item2.Id);
                     SlotWithTasks slotWithTasks = new SlotWithTasks();
                     slotWithTasks.Start = item2.Start;
-                    slotWithTasks.End = item2.End;
+                    slotWithTasks.QuartersNumber = item2.QuartersNumber;
                     slotWithTasks.Id = item2.Id;
                     slotWithTasks.UserId = item2.UserId;
                     slotWithTasks.TasksIds = tasks;
