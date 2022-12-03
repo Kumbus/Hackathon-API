@@ -35,13 +35,15 @@ namespace Application.Services
             return result;
         }
 
-        public async Task<User> GetUser(UserLoginDto loginDto)
+        public async Task<LoginResponseDto> GetUser(UserLoginDto loginDto)
         {
             var user = await _userManager.FindByNameAsync(loginDto.UserName);
             if(user is null || !await _userManager.CheckPasswordAsync(user, loginDto.Password))
                 throw new InvalidCredentialsException();
 
-            return user;
+            var response = _mapper.Map<LoginResponseDto>(user);
+
+            return response;
 
 
         }

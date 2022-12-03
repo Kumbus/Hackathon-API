@@ -16,6 +16,7 @@ namespace Application.Mappings
             => new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<UserRegistrationDto, User>().ConstructUsing(u => new User(u.FirstName, u.LastName, u.Username, u.Email));
+                cfg.CreateMap<User, LoginResponseDto>();
                 cfg.CreateMap<PostSlotDto, ActivitySlot>();
                 cfg.CreateMap<ActivitySlot, SlotDto>();
             })

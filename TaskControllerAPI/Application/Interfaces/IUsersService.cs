@@ -12,6 +12,8 @@ namespace Application.Interfaces
     public interface IUsersService
     {
         public Task<IdentityResult> AddUser(UserRegistrationDto registrationDto);
-        public Task<User> GetUser(UserLoginDto loginDto);
+        public Task<LoginResponseDto> GetUser(UserLoginDto loginDto);
+
+        //public Task<
     }
 }

@@ -5,6 +5,7 @@ using Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace WebApi.Controllers
 {
@@ -13,9 +14,13 @@ namespace WebApi.Controllers
     public class UsersController : ControllerBase
     {
         private readonly IUsersService _usersService;
-        public UsersController(IUsersService usersService) 
+        private readonly ITokenService _tokenService;
+        private readonly IConfiguration _configuration;
+        public UsersController(IUsersService usersService, ITokenService tokenService, IConfiguration configuration) 
         {       
             _usersService = usersService;
+            _tokenService = tokenService;
+            _configuration = configuration;
         }
 
         [HttpPost]
@@ -41,11 +46,15 @@ namespace WebApi.Controllers
             return Ok();
         }
 
-        //[HttpPost]
-        //[Route("login")]
-        //public async Task<IActionResult> UserLogin(UserLoginDto loginDto)
-        //{
+        [HttpPost]
+        [Route("login")]
+        public async Task<IActionResult> UserLogin([FromBody] UserLoginDto loginDto)
+        {
+            var user = await _usersService.GetUser(loginDto);
 
-        //}
+            var token = _tokenService.GenerateJWT(user, _configuration);
+
+            return Ok(new { Token = token });
+        }
     }
 }
