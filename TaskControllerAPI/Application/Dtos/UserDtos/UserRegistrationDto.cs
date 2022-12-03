@@ -26,5 +26,7 @@ namespace Application.Dtos.UserDtos
         public string FirstName { get; set; }
         [Required]
         public string LastName { get; set; }
+
+        public string ClientURI { get; set; }
     }
 }

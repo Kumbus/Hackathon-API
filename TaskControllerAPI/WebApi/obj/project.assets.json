@@ -1407,6 +1407,7 @@
           "AutoMapper": "12.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
           "Domain": "1.0.0",
+          "EmailService": "1.0.0",
           "Google.Apis.Auth": "1.58.0",
           "Microsoft.AspNetCore.Authentication.Google": "6.0.11",
           "Microsoft.AspNetCore.Http.Features": "5.0.17",

@@ -39,6 +39,54 @@ namespace WebApi.Controllers
             return Ok(new RegistrationResponseDto { IsSuccessfulRegistration = true }); ;
         }
 
+        [HttpPost("EmailConfirmation")]
+        public async Task<IActionResult> EmailConfirmation([FromQuery] string email, [FromQuery] string token)
+        {           
+            var result = await _usersService.ConfirmEmail(email, token);
+            if (!result.Succeeded)
+            {
+                var errors = result.Errors.Select(e => e.Description);
+
+                return BadRequest(new { Errors = errors });
+            }
+
+            return Ok("Email confirmed");
+        }
+
+        [HttpPost]
+        [Route("forgotPassword")]
+        public async Task<IActionResult> ForgotPassword(ForgotPasswordDto forgotPasswordDto)
+        {
+            await _usersService.ForgotPassword(forgotPasswordDto);
+            return Ok("Email has been sent");
+        }
+
+        [HttpPost("ResetPassword")]
+        public async Task<IActionResult> ResetPassword(ResetPasswordDto resetPasswordDto)
+        {
+            var result = await _usersService.ResetPassword(resetPasswordDto);
+   
+            if (!result.Succeeded)
+            {
+                var errors = result.Errors.Select(e => e.Description);
+
+                return BadRequest(new { Errors = errors });
+            }
+
+            return Ok();
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> DeleteAccount(DeleteAccountDto deleteAccountDto)
+        {
+            var result = await _usersService.DeleteAccount(deleteAccountDto);
+            if (result.IsSuccessfulDelete)
+                return Ok("Delete was succesful");
+
+            return BadRequest();
+        }
+
+
         [HttpPost]
         [Route("googleRegister")]
         public async Task<IActionResult> UserGoogleRegister()

@@ -34,4 +34,10 @@ namespace Application.Exceptions
         {
         }
     }
+    public sealed class AccountLockedOutException : BadRequestException
+    {
+        public AccountLockedOutException() : base("Your account has been locked due to too many invalid attempts")
+        {
+        }
+    }
 }

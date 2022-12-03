@@ -34,6 +34,9 @@
             "projectReferences": {
               "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\EmailService\\EmailService.csproj": {
+                "projectPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\EmailService\\EmailService.csproj"
               }
             }
           }

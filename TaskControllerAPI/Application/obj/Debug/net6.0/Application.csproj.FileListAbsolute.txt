@@ -73,3 +73,5 @@ C:\Users\Jakub Wrona\Desktop\API\TaskControllerAPI\Application\obj\Debug\net6.0\
 C:\Users\Jakub Wrona\Desktop\API\TaskControllerAPI\Application\obj\Debug\net6.0\refint\Application.dll
 C:\Users\Jakub Wrona\Desktop\API\TaskControllerAPI\Application\obj\Debug\net6.0\Application.pdb
 C:\Users\Jakub Wrona\Desktop\API\TaskControllerAPI\Application\obj\Debug\net6.0\ref\Application.dll
+C:\Users\wikar\OneDrive\Pulpit\Hackathon2\API\TaskControllerAPI\Application\bin\Debug\net6.0\EmailService.dll
+C:\Users\wikar\OneDrive\Pulpit\Hackathon2\API\TaskControllerAPI\Application\bin\Debug\net6.0\EmailService.pdb

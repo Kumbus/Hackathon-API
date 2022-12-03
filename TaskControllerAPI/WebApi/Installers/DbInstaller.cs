@@ -15,7 +15,8 @@ namespace WebApi.Installers
 
             builder.Services.AddIdentity<User, IdentityRole>( options =>
             {
-
+                options.User.RequireUniqueEmail = true;
+                options.Lockout.AllowedForNewUsers = true;
             }).AddEntityFrameworkStores<TaskOrganiserContext>().AddDefaultTokenProviders();
             /*
             builder.Services.AddAuthentication().AddGoogle(googleOptions =>

@@ -12,6 +12,15 @@ namespace Application.Interfaces
     public interface IUsersService
     {
         public Task<IdentityResult> AddUser(UserRegistrationDto registrationDto);
+
+        public Task<IdentityResult> ConfirmEmail(string email, string token);
+
+        public Task ForgotPassword(ForgotPasswordDto forgotPasswordDto);
+        public Task<IdentityResult> ResetPassword(ResetPasswordDto resetPasswordDto);
         public Task<LoginResponseDto> GetUser(UserLoginDto loginDto);
+        public Task<DeleteAccountResponseDto> DeleteAccount(DeleteAccountDto deleteAccountDto);
+
+
+        //public Task<
     }
 }
