@@ -20,14 +20,13 @@ namespace Domain.Entities
         public ActivitySlot Slot { get; set; }
         public User User { get; set; }
 
-        public PlannedTask(int estimatedMinutes, bool isCompleted, int priority, Guid? slotId, string userId, string taskName)
+        public PlannedTask(int estimatedMinutes, bool isCompleted, int priority, Guid? slotId, string taskName)
         {
             Id = Guid.NewGuid();
             EstimatedMinutes = estimatedMinutes;
             IsCompleted = isCompleted;
             Priority = priority;
             SlotId = slotId;
-            UserId = userId;
             TaskName = taskName;
         }
     }

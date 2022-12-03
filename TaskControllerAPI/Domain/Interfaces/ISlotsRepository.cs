@@ -15,5 +15,7 @@ namespace Domain.Interfaces
         public Task<ActivitySlot> GetSlotByIdAsync(Guid id);
         public Task<IEnumerable<ActivitySlot>> GetAllSlotsAsync(string userId);
         public Task UpdateSlotAsync(ActivitySlot slot);
+
+        public Task<List<List<ActivitySlot>>> GetWeek(DateTime dateTime, string userId);
     }
 }

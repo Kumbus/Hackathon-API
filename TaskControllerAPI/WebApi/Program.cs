@@ -23,13 +23,13 @@ app.UseRouting();
 app.UseCors(builder =>
 {
     builder.AllowAnyOrigin()
-           .AllowAnyMethod()
-           .AllowAnyHeader();
+           .AllowAnyHeader()
+           .AllowAnyMethod();
 });
 
 app.UseAuthentication();
 
-app.UseAuthorization();
+//app.UseAuthorization();
 
 app.MapControllers();
 

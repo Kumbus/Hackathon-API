@@ -15,7 +15,12 @@ namespace WebApi.Installers
 
             builder.Services.AddIdentity<User, IdentityRole>( options =>
             {
-                options.User.RequireUniqueEmail = true;
+                options.Password.RequireDigit = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequiredLength = 0;
+                options.User.RequireUniqueEmail = false;
                 options.Lockout.AllowedForNewUsers = true;
             }).AddEntityFrameworkStores<TaskOrganiserContext>().AddDefaultTokenProviders();
             /*

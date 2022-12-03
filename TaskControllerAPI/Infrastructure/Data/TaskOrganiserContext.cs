@@ -16,6 +16,8 @@ namespace Infrastructure.Data
         public DbSet<ActivitySlot> ActivitySlots { get; set; }
         public DbSet<PlannedTask> Tasks { get; set; }
 
+        public DbSet<Identificator> Identificators { get; set; }
+
         public TaskOrganiserContext(DbContextOptions<TaskOrganiserContext> options) : base(options)
         {
 

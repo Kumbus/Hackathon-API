@@ -57,5 +57,11 @@ namespace Infrastructure.Repositories
             _context.Update(updatedTask);
             await _context.SaveChangesAsync();
         }
+
+        public async Task<List<Guid>> GetTasksIdsBySlotId(Guid slotId)
+        {
+            var tasksId = await _context.Tasks.Where(t => t.SlotId == slotId).Select(t => t.Id).ToListAsync();
+            return tasksId;
+        }
     }
 }

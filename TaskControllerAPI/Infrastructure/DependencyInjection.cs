@@ -21,6 +21,7 @@ namespace Infrastructure
         {
             services.AddScoped<ISlotsRepository, MSSMSlotsRepository>();
             services.AddScoped<IPlannedTasksRepository, MSSMTasksRepository>();
+            services.AddScoped<IHexIdRepository, MSSMHexRepository>();
             services.AddScoped<IValidator<PlannedTask>, TaskValidator>();
             return services;
         }

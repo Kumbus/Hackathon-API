@@ -39,19 +39,19 @@ namespace WebApi.Controllers
             return Ok(new RegistrationResponseDto { IsSuccessfulRegistration = true }); ;
         }
 
-        [HttpPost("EmailConfirmation")]
-        public async Task<IActionResult> EmailConfirmation([FromQuery] string email, [FromQuery] string token)
-        {           
-            var result = await _usersService.ConfirmEmail(email, token);
-            if (!result.Succeeded)
-            {
-                var errors = result.Errors.Select(e => e.Description);
+        //[HttpPost("EmailConfirmation")]
+        //public async Task<IActionResult> EmailConfirmation([FromQuery] string email, [FromQuery] string token)
+        //{           
+        //    var result = await _usersService.ConfirmEmail(email, token);
+        //    if (!result.Succeeded)
+        //    {
+        //        var errors = result.Errors.Select(e => e.Description);
 
-                return BadRequest(new { Errors = errors });
-            }
+        //        return BadRequest(new { Errors = errors });
+        //    }
 
-            return Ok("Email confirmed");
-        }
+        //    return Ok("Email confirmed");
+        //}
 
         [HttpPost]
         [Route("forgotPassword")]
@@ -89,20 +89,22 @@ namespace WebApi.Controllers
 
         [HttpPost]
         [Route("googleRegister")]
-        public async Task<IActionResult> UserGoogleRegister()
+        public async Task<IActionResult> GoogleRegister(ExternalAuthDto externalAuthDto)
         {
-            return Ok();
+            var token = await _usersService.GoogleAuthentication(externalAuthDto);
+
+            return Ok(new { Token = token });
         }
 
         [HttpPost]
         [Route("login")]
         public async Task<IActionResult> UserLogin([FromBody] UserLoginDto loginDto)
         {
-            var user = await _usersService.GetUser(loginDto);
+            var hex = await _usersService.GetUser(loginDto);
 
-            var token = _tokenService.GenerateJWT(user, _configuration);
+            //var token = _tokenService.GenerateJWT(user, _configuration);
 
-            return Ok(new { Token = token });
+            return Ok(hex);
         }
     }
 }

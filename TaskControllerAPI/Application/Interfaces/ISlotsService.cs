@@ -11,8 +11,9 @@ namespace Application.Interfaces
     {
         public Task<SlotDto> AddSlotAsync(PostSlotDto newSlot);
         public Task<SlotDto> UpdateSlotAsync(UpdateSlotDto updatedSlot, Guid id);
-        public Task DeleteSlotAsync(Guid id);
+        public Task DeleteSlotAsync(Guid id, string hexIdentificator);
         public Task<SlotDto> GetSlotByIdAsync(Guid id);
-        public Task<IEnumerable<SlotDto>> GetSlotsAsync(string userId);
+        public Task<IEnumerable<SlotDto>> GetSlotsAsync(string hexIdentificator);
+        public Task<GetWeekDto> GetWeek(DateTime dateTime, string hexIdentificator);
     }
 }

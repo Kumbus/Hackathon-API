@@ -19,17 +19,25 @@ namespace Application.Services
         private readonly IMapper _mapper;
         private readonly IValidator<PlannedTask> _validator;
         private readonly IPlannedTasksRepository _repository;
-
-        public TasksService(IMapper mapper, IValidator<PlannedTask> validator, IPlannedTasksRepository repository)
+        private readonly IHexIdRepository _hexIdRepository;
+        private readonly ISlotsRepository _slotsRepository;
+        public TasksService(IMapper mapper, IValidator<PlannedTask> validator, IPlannedTasksRepository repository, IHexIdRepository hexIdRepository, ISlotsRepository slotsRepository)
         {
             _mapper = mapper;
             _validator = validator;
             _repository = repository;
+            _hexIdRepository = hexIdRepository;
+            _slotsRepository = slotsRepository;
         }
 
         public async Task<TaskDto> AddTaskAsync(PostTaskDto newTask)
         {
+            var user = await _hexIdRepository.GetUser(newTask.HexIdentificator);
+            if (user is null)
+                throw new InvalidCredentialsException();
+
             var task = _mapper.Map<PlannedTask>(newTask);
+            task.UserId = user.UserId;
 
             ValidationResult result = await _validator.ValidateAsync(task);
             if (!result.IsValid)
@@ -40,12 +48,58 @@ namespace Application.Services
             return _mapper.Map<TaskDto>(task);
         }
 
-        public async Task DeleteTaskAsync(Guid id)
+        public async Task AssignTask(Guid taskId, string hexIdentificator, Guid slotId)
         {
+            var identificator = await _hexIdRepository.GetUser(hexIdentificator);
+            if(identificator is null) 
+                throw new InvalidCredentialsException();
+
+            var task = await _repository.GetTaskByIdAsync(taskId);
+            if(task is null) 
+                throw new InvalidCredentialsException();
+
+            var slot = await _slotsRepository.GetSlotByIdAsync(slotId);
+            if(slot is null)
+                throw new InvalidCredentialsException();
+
+            task.SlotId = slotId;
+            await _repository.UpdateTaskAsync(task);
+
+            await Task.CompletedTask;
+        }
+
+        public async Task ChangeStateOfTaskAsync(Guid id, string hexIdentificator, bool isCompleted)
+        {
+            var user = await _hexIdRepository.GetUser(hexIdentificator);
+            if (user is null)
+                throw new InvalidCredentialsException();
+
             var task = await _repository.GetTaskByIdAsync(id);
 
             if (task == null)
                 throw new TaskNotFoundException(id);
+
+            if (user.UserId != task.UserId)
+                throw new InvalidCredentialsException();
+
+            task.IsCompleted = isCompleted;
+
+            await _repository.UpdateTaskAsync(task);
+        }
+
+        public async Task DeleteTaskAsync(Guid id, string hexIdentificator)
+        {
+            var user = await _hexIdRepository.GetUser(hexIdentificator);
+            if (user is null)
+                throw new InvalidCredentialsException();
+
+            var task = await _repository.GetTaskByIdAsync(id);
+
+            if (task == null)
+                throw new TaskNotFoundException(id);
+
+            if(user.UserId != task.UserId) 
+                throw new InvalidCredentialsException();
 
             await _repository.DeleteTaskAsync(task);
         }
@@ -67,19 +121,30 @@ namespace Application.Services
             return _mapper.Map<IEnumerable<TaskDto>>(tasks);
         }
 
-        public async Task<IEnumerable<TaskDto>> GetTasksByUserIdAsync(string userId)
+        public async Task<IEnumerable<TaskDto>> GetTasksByUserIdAsync(string hexIdentificator)
         {
-            var tasks = await _repository.GetTasksByUserIdAsync(userId);
+            var user = await _hexIdRepository.GetUser(hexIdentificator);
+            if (user is null)
+                throw new InvalidCredentialsException();
+
+            var tasks = await _repository.GetTasksByUserIdAsync(user.UserId);
 
             return _mapper.Map<IEnumerable<TaskDto>>(tasks);
         }
 
         public async Task<TaskDto> UpdateTaskAsync(UpdateTaskDto updatedTask, Guid id)
         {
+            var user = await _hexIdRepository.GetUser(updatedTask.HexIdentificator);
+            if (user is null)
+                throw new InvalidCredentialsException();
+
             var task = await _repository.GetTaskByIdAsync(id);
 
             if (task == null)
                 throw new TaskNotFoundException(id);
+
+            if (user.UserId != task.UserId)
+                throw new InvalidCredentialsException();
 
             var newTask = _mapper.Map(updatedTask, task);
 
@@ -91,5 +156,6 @@ namespace Application.Services
 
             return _mapper.Map<TaskDto>(newTask);
         }
+
     }
 }

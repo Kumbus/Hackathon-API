@@ -15,5 +15,6 @@ namespace Domain.Interfaces
         public Task<IEnumerable<PlannedTask>> GetTasksBySlotIdAsync(Guid slotId);
         public Task DeleteTaskAsync(PlannedTask task);
         public Task UpdateTaskAsync(PlannedTask updatedTask);
+        public Task<List<Guid>> GetTasksIdsBySlotId(Guid slotId);
     }
 }

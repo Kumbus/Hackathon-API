@@ -16,12 +16,12 @@ namespace Application.Mappings
         public static IMapper Initialize()
             => new MapperConfiguration(cfg =>
             {
-                cfg.CreateMap<UserRegistrationDto, User>().ConstructUsing(u => new User(u.FirstName, u.LastName, u.Username, u.Email));
+                cfg.CreateMap<UserRegistrationDto, User>().ConstructUsing(u => new User(u.Username));
                 cfg.CreateMap<User, LoginResponseDto>();
-                cfg.CreateMap<PostSlotDto, ActivitySlot>();
+                cfg.CreateMap<PostSlotDto, ActivitySlot>().ConstructUsing(s => new ActivitySlot(s.CategoryOfActivity, s.Name, s.Start, s.End, s.Color));
                 cfg.CreateMap<ActivitySlot, SlotDto>();
-                cfg.CreateMap<UpdateSlotDto, ActivitySlot>();
-                cfg.CreateMap<PostTaskDto, PlannedTask>();
+                cfg.CreateMap<UpdateSlotDto, ActivitySlot>().ConstructUsing(s => new ActivitySlot(s.CategoryOfActivity, s.Name, s.Start, s.End, s.Color));
+                cfg.CreateMap<PostTaskDto, PlannedTask>().ConstructUsing(t => new PlannedTask(t.EstimatedMinutes, t.IsCompleted, t.Priority, t.SlotId, t.TaskName));
                 cfg.CreateMap<PlannedTask, TaskDto>();
                 cfg.CreateMap<UpdateTaskDto, PlannedTask>();
             })

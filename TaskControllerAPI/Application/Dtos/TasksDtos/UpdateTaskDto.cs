@@ -13,5 +13,7 @@ namespace Application.Dtos.TasksDtos
         public int Priority { get; set; }
         public Guid? SlotId { get; set; }
         public string TaskName { get; set; }
+
+        public string HexIdentificator { get; set; }
     }
 }

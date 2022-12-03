@@ -398,31 +398,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\wikar\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Jakub Wrona\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\EmailService\\EmailService.csproj",
+      "projectUniqueName": "C:\\Users\\Jakub Wrona\\Desktop\\API\\TaskControllerAPI\\EmailService\\EmailService.csproj",
       "projectName": "EmailService",
-      "projectPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\EmailService\\EmailService.csproj",
-      "packagesPath": "C:\\Users\\wikar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\EmailService\\obj\\",
+      "projectPath": "C:\\Users\\Jakub Wrona\\Desktop\\API\\TaskControllerAPI\\EmailService\\EmailService.csproj",
+      "packagesPath": "C:\\Users\\Jakub Wrona\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jakub Wrona\\Desktop\\API\\TaskControllerAPI\\EmailService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\wikar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jakub Wrona\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -457,20 +461,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.11, 6.0.11]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.11, 6.0.11]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.11, 6.0.11]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

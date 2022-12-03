@@ -10,18 +10,12 @@ namespace Domain.Entities
 {
     public class User : IdentityUser
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-
         public IEnumerable<ActivitySlot> Slots { get; set; }
         public IEnumerable<PlannedTask> Tasks { get; set; }
 
-        public User(string firstName, string lastName, string userName, string email) : base(userName)
+        public User( string userName) : base(userName)
         {
-            FirstName = firstName;
-            LastName = lastName;
             UserName = userName;
-            Email = email;
         }
     }
 }

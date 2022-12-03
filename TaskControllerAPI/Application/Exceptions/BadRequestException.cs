@@ -40,4 +40,11 @@ namespace Application.Exceptions
         {
         }
     }
+
+    public sealed class BadExternalAuthenticationException : BadRequestException
+    {
+        public BadExternalAuthenticationException() : base("Incorrect external authentication")
+        {
+        }
+    }
 }

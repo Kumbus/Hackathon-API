@@ -1,4 +1,6 @@
-﻿using Domain.Entities;
+﻿using Application.AdditionalStructures;
+using Application.Dtos.SlotsDtos;
+using Domain.Entities;
 using Domain.Interfaces;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -48,6 +50,50 @@ namespace Infrastructure.Repositories
         {
             _context.Update(slot);
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<List<List<ActivitySlot>>> GetWeek(DateTime dateTime, string userId) 
+        {
+            //var date = new TimeSpan(24,0,0);
+            var startDate = dateTime;
+            var endDate = dateTime.AddDays(1);
+            //var datetmp = new TimeSpan(24,0,0);
+            var monday = _context.ActivitySlots.Where(s => s.End >= startDate && s.End <= endDate && s.UserId == userId).ToList();
+            startDate = startDate.AddDays(1);
+            endDate = endDate.AddDays(1);
+            var tuesday = _context.ActivitySlots.Where(s => s.End >= startDate && s.End <= endDate && s.UserId == userId).ToList();
+            startDate = startDate.AddDays(1);
+            endDate = endDate.AddDays(1);
+            var wednesday = _context.ActivitySlots.Where(s => s.End >= startDate && s.End <= endDate && s.UserId == userId).ToList();
+            startDate = startDate.AddDays(1);
+            endDate = endDate.AddDays(1);
+            var thursday = _context.ActivitySlots.Where(s => s.End >= startDate && s.End <= endDate && s.UserId == userId).ToList();
+            startDate = startDate.AddDays(1);
+            endDate = endDate.AddDays(1);
+            var friday = _context.ActivitySlots.Where(s => s.End >= startDate && s.End <= endDate && s.UserId == userId).ToList();
+            startDate = startDate.AddDays(1);
+            endDate = endDate.AddDays(1);
+            var saturday = _context.ActivitySlots.Where(s => s.End >= startDate && s.End <= endDate && s.UserId == userId).ToList();
+            startDate = startDate.AddDays(1);
+            endDate = endDate.AddDays(1);
+            var sunday = _context.ActivitySlots.Where(s => s.End >= startDate && s.End <= endDate && s.UserId == userId).ToList();
+
+
+            List<List<ActivitySlot>> activitySlots = new List<List<ActivitySlot>>
+            {
+                monday,
+                tuesday,
+                wednesday,
+                thursday,
+                friday,
+                saturday,
+                sunday
+            };
+
+            return activitySlots;
+            //GetWeekDto getWeekDto = new GetWeekDto();
+            //List<Weekday> weekdays= new List<Weekday>();
+            //getWeekDto.Week.Add(monday);
         }
     }
 }

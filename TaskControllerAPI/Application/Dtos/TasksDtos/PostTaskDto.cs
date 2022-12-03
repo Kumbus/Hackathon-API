@@ -12,7 +12,9 @@ namespace Application.Dtos.TasksDtos
         public bool IsCompleted { get; set; }
         public int Priority { get; set; }
         public Guid? SlotId { get; set; }
-        public string UserId { get; set; }
+        //public string UserId { get; set; }
         public string TaskName { get; set; }
+
+        public string HexIdentificator { get; set; }
     }
 }

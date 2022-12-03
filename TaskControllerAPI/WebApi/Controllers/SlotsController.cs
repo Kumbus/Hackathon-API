@@ -25,17 +25,17 @@ namespace WebApi.Controllers
             return Ok(slot);
         }
 
-        [HttpGet("{id}")]
+        [HttpPost("{id}")]
         public async Task<IActionResult> GetSlot(Guid id)
         {
            var slot = await _slotsService.GetSlotByIdAsync(id);
             return Ok(slot);
         }
 
-        [HttpGet("/slots/allSlots/{userId}")]
-        public async Task<IActionResult> GetSlots(string userId)
+        [HttpPost("/slots/allSlots/{hexIdentificator}")]
+        public async Task<IActionResult> GetSlots(string hexIdentificator)
         {
-            var slots = await _slotsService.GetSlotsAsync(userId);
+            var slots = await _slotsService.GetSlotsAsync(hexIdentificator);
             return Ok(slots);
         }
 
@@ -45,12 +45,19 @@ namespace WebApi.Controllers
             var slot = await _slotsService.UpdateSlotAsync(updatedSlot, id);
             return Ok(slot);
         }
-        [Authorize(AuthenticationSchemes = "Bearer")]
+        //[Authorize(AuthenticationSchemes = "Bearer")]
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteSlot(Guid id)
+        public async Task<IActionResult> DeleteSlot(Guid id, string hexIdentificator)
         {
-            await _slotsService.DeleteSlotAsync(id);
+            await _slotsService.DeleteSlotAsync(id, hexIdentificator);
             return Ok();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetWeek(DateTime dateTime, string hexIdentificator)
+        {
+            var week = await _slotsService.GetWeek(dateTime, hexIdentificator);
+            return Ok(week); 
         }
     }
     

@@ -24,14 +24,14 @@ namespace WebApi.Controllers
             return Ok(task);
         }
 
-        [HttpGet("tasks/user/{userId}")]
-        public async Task<IActionResult> GetTasksByUserId(string userId)
+        [HttpPost("tasks/user/{hexIdentificator}")]
+        public async Task<IActionResult> GetTasksByUserId(string hexIdentificator)
         {
-            var tasks = await _service.GetTasksByUserIdAsync(userId);
+            var tasks = await _service.GetTasksByUserIdAsync(hexIdentificator);
             return Ok(tasks);
         }
 
-        [HttpGet("tasks/slot/{slotId}")]
+        [HttpPost("tasks/slot/{slotId}")]
         public async Task<IActionResult> GetTasksBySlotId(Guid slotId)
         {
             var tasks = await _service.GetTasksBySlotIdAsync(slotId);
@@ -46,9 +46,9 @@ namespace WebApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTask(Guid id)
+        public async Task<IActionResult> DeleteTask(Guid id, string hexIdentificator)
         {
-            await _service.DeleteTaskAsync(id);
+            await _service.DeleteTaskAsync(id, hexIdentificator);
             return Ok();
         }
 
@@ -57,6 +57,19 @@ namespace WebApi.Controllers
         {
             var task = await _service.UpdateTaskAsync(newTask, id);
             return Ok(task);
+        }
+
+        [HttpPost("/completeTask/{id}")]
+        public async Task<IActionResult> CompleteTask(Guid id, string hexIdentificator, bool isCompleted)
+        {
+            await _service.ChangeStateOfTaskAsync(id, hexIdentificator, isCompleted);
+            return Ok();
+        }
+        [HttpPut("/assignTaskToSlot/{taskId}")]
+        public async Task<IActionResult> AssignTask(Guid taskId, string hexIdentifier, Guid slotId)
+        {
+            await _service.AssignTask(taskId, hexIdentifier, slotId);
+            return Ok();
         }
     }
 }
