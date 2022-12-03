@@ -14,6 +14,7 @@ namespace Infrastructure.Data
     {
         public DbSet<User> Users { get; set; }
         public DbSet<ActivitySlot> ActivitySlots { get; set; }
+        public DbSet<PlannedTask> Tasks { get; set; }
 
         public TaskOrganiserContext(DbContextOptions<TaskOrganiserContext> options) : base(options)
         {
@@ -42,6 +43,9 @@ namespace Infrastructure.Data
         {
             modelBuilder.Entity<User>()
                 .ToTable("Users");
+
+            modelBuilder.Entity<PlannedTask>()
+                .ToTable("Tasks");
 
             modelBuilder.Entity<ActivitySlot>()
                 .ToTable("Activity Slots")

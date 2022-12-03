@@ -10,6 +10,8 @@ using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Domain.Interfaces;
 using Infrastructure.Repositories;
+using Domain.Entities;
+using Domain.Validators;
 
 namespace Infrastructure
 {
@@ -18,6 +20,8 @@ namespace Infrastructure
         public static IServiceCollection AddInfrastructure(this IServiceCollection services)
         {
             services.AddScoped<ISlotsRepository, MSSMSlotsRepository>();
+            services.AddScoped<IPlannedTasksRepository, MSSMTasksRepository>();
+            services.AddScoped<IValidator<PlannedTask>, TaskValidator>();
             return services;
         }
     }

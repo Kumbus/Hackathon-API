@@ -27,4 +27,11 @@ namespace Application.Exceptions
         {
         }
     }
+
+    public sealed class FailedOnCreation : BadRequestException
+    {
+        public FailedOnCreation(string message) : base(message)
+        {
+        }
+    }
 }

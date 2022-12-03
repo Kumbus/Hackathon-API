@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/J7vudsiTM9H6lnrqPwQKX6vzVuEdjJq7Yx6qNekT4Q/wUVJSQCDYy1B5j0M6txDbMaKWxGPXZUcKXIhHtYAeg==",
+  "dgSpecHash": "0RujN3xCqpyoKdCiCKYcgSjePaWVVLG1wCCvhaZAVxMk2XXvjoJGc+FzP1LeyMWWcxAdLLkitOJab+fIPtdWHQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon\\API\\TaskControllerAPI\\EmailService\\EmailService.csproj",
+  "projectFilePath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon2\\API\\TaskControllerAPI\\EmailService\\EmailService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wikar\\.nuget\\packages\\mailkit\\3.2.0\\mailkit.3.2.0.nupkg.sha512",
     "C:\\Users\\wikar\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",

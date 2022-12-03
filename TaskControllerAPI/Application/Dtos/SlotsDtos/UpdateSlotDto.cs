@@ -12,5 +12,6 @@ namespace Application.Dtos.SlotsDtos
         public Category CategoryOfActivity { get; set; }
         public DateTime Start { get; set; }
         public DateTime End { get; set; }
+        public string Color { get; set; }
     }
 }

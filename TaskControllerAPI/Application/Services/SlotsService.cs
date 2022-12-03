@@ -35,7 +35,7 @@ namespace Application.Services
         {
             var slot = await _slotsRepository.GetSlotByIdAsync(id);
             if (slot == null)
-                throw new UserNotFoundException(id);
+                throw new SlotNotFoundException(id);
 
             await _slotsRepository.DeleteSlotAsync(slot);
         }
@@ -44,7 +44,7 @@ namespace Application.Services
         {
             var slot = await _slotsRepository.GetSlotByIdAsync(id);
             if (slot == null)
-                throw new UserNotFoundException(id);
+                throw new SlotNotFoundException(id);
 
             return _mapper.Map<SlotDto>(slot);
         }
@@ -62,7 +62,7 @@ namespace Application.Services
         {
             var slot = await _slotsRepository.GetSlotByIdAsync(id);
             if (slot == null)
-                throw new UserNotFoundException(id);
+                throw new SlotNotFoundException(id);
 
             var newSlot = _mapper.Map(updatedSlot, slot);
 

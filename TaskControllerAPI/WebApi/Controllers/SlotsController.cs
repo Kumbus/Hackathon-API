@@ -1,5 +1,6 @@
 ﻿using Application.Dtos.SlotsDtos;
 using Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -44,7 +45,7 @@ namespace WebApi.Controllers
             var slot = await _slotsService.UpdateSlotAsync(updatedSlot, id);
             return Ok(slot);
         }
-
+        [Authorize(AuthenticationSchemes = "Bearer")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteSlot(Guid id)
         {

@@ -13,7 +13,5 @@ namespace Application.Interfaces
     {
         public Task<IdentityResult> AddUser(UserRegistrationDto registrationDto);
         public Task<LoginResponseDto> GetUser(UserLoginDto loginDto);
-
-        //public Task<
     }
 }

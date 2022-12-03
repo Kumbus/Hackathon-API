@@ -17,12 +17,12 @@ namespace WebApi.Installers
             {
 
             }).AddEntityFrameworkStores<TaskOrganiserContext>().AddDefaultTokenProviders();
-
+            /*
             builder.Services.AddAuthentication().AddGoogle(googleOptions =>
             {
                 googleOptions.ClientId = builder.Configuration["ClientId"];
                 googleOptions.ClientSecret = builder.Configuration["ClientSecret"];
-            });
+            }); */
         }
     }
 }

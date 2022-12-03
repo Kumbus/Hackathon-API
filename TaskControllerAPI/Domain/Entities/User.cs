@@ -14,6 +14,7 @@ namespace Domain.Entities
         public string LastName { get; set; }
 
         public IEnumerable<ActivitySlot> Slots { get; set; }
+        public IEnumerable<PlannedTask> Tasks { get; set; }
 
         public User(string firstName, string lastName, string userName, string email) : base(userName)
         {

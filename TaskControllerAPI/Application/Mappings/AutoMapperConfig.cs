@@ -1,4 +1,5 @@
 ﻿using Application.Dtos.SlotsDtos;
+using Application.Dtos.TasksDtos;
 using Application.Dtos.UserDtos;
 using AutoMapper;
 using Domain.Entities;
@@ -20,6 +21,9 @@ namespace Application.Mappings
                 cfg.CreateMap<PostSlotDto, ActivitySlot>();
                 cfg.CreateMap<ActivitySlot, SlotDto>();
                 cfg.CreateMap<UpdateSlotDto, ActivitySlot>();
+                cfg.CreateMap<PostTaskDto, PlannedTask>();
+                cfg.CreateMap<PlannedTask, TaskDto>();
+                cfg.CreateMap<UpdateTaskDto, PlannedTask>();
             })
             .CreateMapper();
     }
