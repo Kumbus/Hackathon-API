@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon\\API\\TaskControllerAPI\\Application\\Application.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon\\API\\TaskControllerAPI\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\wikar\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon\\API\\TaskControllerAPI\\Application\\obj\\",
+=======
+    "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon4\\API\\TaskControllerAPI\\Application\\Application.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon4\\API\\TaskControllerAPI\\Application\\Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon4\\API\\TaskControllerAPI\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon4\\API\\TaskControllerAPI\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\wikar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon4\\API\\TaskControllerAPI\\Application\\obj\\",
+>>>>>>> a192d1da3a8acade160158dbfc995f44c4833b2b
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +46,13 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon\\API\\TaskControllerAPI\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon\\API\\TaskControllerAPI\\Domain\\Domain.csproj"
+=======
+              "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon4\\API\\TaskControllerAPI\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon4\\API\\TaskControllerAPI\\Domain\\Domain.csproj"
+>>>>>>> a192d1da3a8acade160158dbfc995f44c4833b2b
               }
             }
           }
@@ -115,6 +134,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon\\API\\TaskControllerAPI\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -123,6 +143,16 @@
         "projectPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon\\API\\TaskControllerAPI\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\wikar\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon\\API\\TaskControllerAPI\\Domain\\obj\\",
+=======
+    "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon4\\API\\TaskControllerAPI\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon4\\API\\TaskControllerAPI\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon4\\API\\TaskControllerAPI\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\wikar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon4\\API\\TaskControllerAPI\\Domain\\obj\\",
+>>>>>>> a192d1da3a8acade160158dbfc995f44c4833b2b
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

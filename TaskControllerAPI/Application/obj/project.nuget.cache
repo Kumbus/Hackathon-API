@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "9KVdTY3av0Sa2Q23E2WmeDseqcafbEJZSlP+Tlm2no0r7U/x1wQaCElpBJ802a0LHwXcDzLlY3fCsvLqFQkGsQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon\\API\\TaskControllerAPI\\Application\\Application.csproj",
+=======
+  "dgSpecHash": "AwEgjyGHRxe1G9CQJlfm/TQrHLsT6NccIMJpxzUiG9LzsdOAZ3d8lsAJ1NmpKjMo5kyHFVHj00LaFmwuAAZ2qA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\wikar\\OneDrive\\Pulpit\\Hackathon4\\API\\TaskControllerAPI\\Application\\Application.csproj",
+>>>>>>> a192d1da3a8acade160158dbfc995f44c4833b2b
   "expectedPackageFiles": [
     "C:\\Users\\wikar\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\wikar\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
