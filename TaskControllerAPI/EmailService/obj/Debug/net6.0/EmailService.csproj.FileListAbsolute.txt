@@ -1,0 +1,12 @@
+C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\EmailService\bin\Debug\net6.0\EmailService.deps.json
+C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\EmailService\bin\Debug\net6.0\EmailService.dll
+C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\EmailService\bin\Debug\net6.0\EmailService.pdb
+C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\EmailService\obj\Debug\net6.0\EmailService.csproj.AssemblyReference.cache
+C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\EmailService\obj\Debug\net6.0\EmailService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\EmailService\obj\Debug\net6.0\EmailService.AssemblyInfoInputs.cache
+C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\EmailService\obj\Debug\net6.0\EmailService.AssemblyInfo.cs
+C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\EmailService\obj\Debug\net6.0\EmailService.csproj.CoreCompileInputs.cache
+C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\EmailService\obj\Debug\net6.0\EmailService.dll
+C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\EmailService\obj\Debug\net6.0\refint\EmailService.dll
+C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\EmailService\obj\Debug\net6.0\EmailService.pdb
+C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\EmailService\obj\Debug\net6.0\ref\EmailService.dll
