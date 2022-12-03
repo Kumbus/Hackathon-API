@@ -11,5 +11,9 @@ namespace Domain.Interfaces
     public interface ISlotsRepository
     {
         public Task AddSlotAsync(ActivitySlot slot);
+        public Task DeleteSlotAsync(ActivitySlot slot);
+        public Task<ActivitySlot> GetSlotByIdAsync(Guid id);
+        public Task<ActivitySlot> GetAllSlotsAsync();
+        public Task UpdateSlotAsync(ActivitySlot slot);
     }
 }

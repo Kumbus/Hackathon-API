@@ -22,5 +22,26 @@ namespace Infrastructure.Repositories
             await _context.AddAsync(slot);
             await _context.SaveChangesAsync();
         }
+
+        public async Task DeleteSlotAsync(ActivitySlot slot)
+        {
+            _context.Remove(slot);
+            await _context.SaveChangesAsync();
+        }
+
+        public Task<ActivitySlot> GetAllSlotsAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ActivitySlot> GetSlotByIdAsync(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task UpdateSlotAsync(ActivitySlot slot)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
