@@ -19,6 +19,7 @@ namespace Application.Mappings
                 cfg.CreateMap<User, LoginResponseDto>();
                 cfg.CreateMap<PostSlotDto, ActivitySlot>();
                 cfg.CreateMap<ActivitySlot, SlotDto>();
+                cfg.CreateMap<UpdateSlotDto, ActivitySlot>();
             })
             .CreateMapper();
     }

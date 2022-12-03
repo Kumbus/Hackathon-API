@@ -19,6 +19,9 @@ namespace Application.Exceptions
         public UserNotFoundException(Guid userId) : base($"User with id {userId} doesn't exist.")
         {
         }
+        public UserNotFoundException(string userId) : base($"User with id {userId} doesn't exist.")
+        {
+        }
     }
 
 }

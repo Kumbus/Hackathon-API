@@ -13,7 +13,7 @@ namespace Domain.Interfaces
         public Task AddSlotAsync(ActivitySlot slot);
         public Task DeleteSlotAsync(ActivitySlot slot);
         public Task<ActivitySlot> GetSlotByIdAsync(Guid id);
-        public Task<ActivitySlot> GetAllSlotsAsync();
+        public Task<IEnumerable<ActivitySlot>> GetAllSlotsAsync(string userId);
         public Task UpdateSlotAsync(ActivitySlot slot);
     }
 }

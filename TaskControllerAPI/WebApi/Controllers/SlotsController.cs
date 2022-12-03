@@ -16,6 +16,7 @@ namespace WebApi.Controllers
         {
             _slotsService = slotsService;
         }
+
         [HttpPost]
         public async Task <IActionResult> AddSlot(PostSlotDto newSlot)
         {

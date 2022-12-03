@@ -1,4 +1,5 @@
 ﻿using Application.Dtos.SlotsDtos;
+using Application.Exceptions;
 using Application.Interfaces;
 using AutoMapper;
 using Domain.Entities;
@@ -28,6 +29,46 @@ namespace Application.Services
             await _slotsRepository.AddSlotAsync(slot);
 
             return _mapper.Map<SlotDto>(slot);
+        }
+
+        public async Task DeleteSlotAsync(Guid id)
+        {
+            var slot = await _slotsRepository.GetSlotByIdAsync(id);
+            if (slot == null)
+                throw new UserNotFoundException(id);
+
+            await _slotsRepository.DeleteSlotAsync(slot);
+        }
+
+        public async Task<SlotDto> GetSlotByIdAsync(Guid id)
+        {
+            var slot = await _slotsRepository.GetSlotByIdAsync(id);
+            if (slot == null)
+                throw new UserNotFoundException(id);
+
+            return _mapper.Map<SlotDto>(slot);
+        }
+
+        public async Task<IEnumerable<SlotDto>> GetSlotsAsync(string userId)
+        {
+            var slots = await _slotsRepository.GetAllSlotsAsync(userId);
+            if (slots == null)
+                throw new UserNotFoundException(userId);
+
+            return _mapper.Map<IEnumerable<SlotDto>>(slots);
+        }
+
+        public async Task<SlotDto> UpdateSlotAsync(UpdateSlotDto updatedSlot, Guid id)
+        {
+            var slot = await _slotsRepository.GetSlotByIdAsync(id);
+            if (slot == null)
+                throw new UserNotFoundException(id);
+
+            var newSlot = _mapper.Map(updatedSlot, slot);
+
+            await _slotsRepository.UpdateSlotAsync(newSlot);
+
+            return _mapper.Map<SlotDto>(_mapper);
         }
     }
 }

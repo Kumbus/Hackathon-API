@@ -1,6 +1,7 @@
 ﻿using Domain.Entities;
 using Domain.Interfaces;
 using Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Repositories
 {
-    public class MSSMRepository : ISlotsRepository
+    public class MSSMSlotsRepository : ISlotsRepository
     {
         private readonly TaskOrganiserContext _context;
         
-        public MSSMRepository(TaskOrganiserContext context)
+        public MSSMSlotsRepository(TaskOrganiserContext context)
         {
             _context = context;
         }
@@ -29,19 +30,24 @@ namespace Infrastructure.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public Task<ActivitySlot> GetAllSlotsAsync()
+        public async Task<IEnumerable<ActivitySlot>> GetAllSlotsAsync(string userId)
         {
-            throw new NotImplementedException();
+            var slots = _context.ActivitySlots
+                .Where(s => s.UserId == userId);
+
+            return await slots.ToListAsync();
+                
         }
 
-        public Task<ActivitySlot> GetSlotByIdAsync(Guid id)
+        public async Task<ActivitySlot> GetSlotByIdAsync(Guid id)
         {
-            throw new NotImplementedException();
+            return await _context.ActivitySlots.SingleOrDefaultAsync(s => s.Id == id);
         }
 
-        public Task UpdateSlotAsync(ActivitySlot slot)
+        public async Task UpdateSlotAsync(ActivitySlot slot)
         {
-            throw new NotImplementedException();
+            _context.Update(slot);
+            await _context.SaveChangesAsync();
         }
     }
 }

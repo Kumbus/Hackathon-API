@@ -21,7 +21,6 @@ C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\
 C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.Identity.Client.dll
@@ -33,15 +32,6 @@ C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\
 C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Serilog.dll
-C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Serilog.AspNetCore.dll
-C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
-C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
-C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
-C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
-C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Serilog.Sinks.Console.dll
-C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
-C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Serilog.Sinks.File.dll
 C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -358,3 +348,9 @@ C:\Users\Jakub Wrona\Desktop\API\TaskControllerAPI\WebApi\obj\Debug\net6.0\refin
 C:\Users\Jakub Wrona\Desktop\API\TaskControllerAPI\WebApi\obj\Debug\net6.0\WebApi.pdb
 C:\Users\Jakub Wrona\Desktop\API\TaskControllerAPI\WebApi\obj\Debug\net6.0\WebApi.genruntimeconfig.cache
 C:\Users\Jakub Wrona\Desktop\API\TaskControllerAPI\WebApi\obj\Debug\net6.0\ref\WebApi.dll
+C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Google.Apis.dll
+C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Google.Apis.Auth.PlatformServices.dll
+C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Google.Apis.Auth.dll
+C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Google.Apis.Core.dll
+C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\wikar\OneDrive\Pulpit\Hackathon\API\TaskControllerAPI\WebApi\bin\Debug\net6.0\Newtonsoft.Json.dll
